@@ -51,7 +51,7 @@ FROM
     PASSENGER
 WHERE
     Distance >= 600
-GROUP BY GENDER;
+GROUP BY GENDER; 
 
 -- Q4 - Find the minimum ticket price for Sleeper Bus.
 SELECT 
@@ -99,7 +99,6 @@ WHERE
         AND Pass.Distance = 1000;
 
 -- Q8 - What will be the Sitting and Sleeper bus charge for Pallavi to travel from Bangalore to Panaji?
-
 
 -- Q9 - List the distances from the "PASSENGER" table which are unique (non-repeated distances) in descending order.
 SELECT DISTINCT
