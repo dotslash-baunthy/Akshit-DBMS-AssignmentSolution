@@ -124,7 +124,7 @@ BEGIN
 select Distance, Price,
 case
 when Price > 1000 then 'Expensive'
-when Price > 500 then 'Average'
+when Price > 500 then 'Average Cost'
 else 'Cheap'
 end as verdict from PRICE;
 END //
