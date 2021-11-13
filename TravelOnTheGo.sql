@@ -89,8 +89,17 @@ END DESC , CASE
 END ASC;
 
 -- Q7 - What is the PASSENGER name and his/her ticket price who travelled in Sitting bus for a distance of 1000 KMs
+SELECT 
+    Pass.Passenger_name, P.Price
+FROM
+    PASSENGER AS Pass,
+    PRICE AS P
+WHERE
+    Pass.Bus_type = 'Sitting'
+        AND Pass.Distance = 1000;
 
 -- Q8 - What will be the Sitting and Sleeper bus charge for Pallavi to travel from Bangalore to Panaji?
+
 
 -- Q9 - List the distances from the "PASSENGER" table which are unique (non-repeated distances) in descending order.
 SELECT DISTINCT
