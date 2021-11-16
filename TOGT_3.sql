@@ -32,7 +32,8 @@ insert into PRICE (bus_type, distance, price) values('Sleeper', 600, 1320);
 insert into PRICE (bus_type, distance, price) values('Sleeper', 700, 1540);
 insert into PRICE (bus_type, distance, price) values('Sleeper', 1000, 2200);
 insert into PRICE (bus_type, distance, price) values('Sleeper', 1200, 2640);
-insert into PRICE (bus_type, distance, price) values('Sleeper', 350, 434);
+-- Update bus_type in below tuple to sitting. This matches other price/distance ratios.
+insert into PRICE (bus_type, distance, price) values('Sitting', 350, 434);
 insert into PRICE (bus_type, distance, price) values('Sitting', 500, 620);
 insert into PRICE (bus_type, distance, price) values('Sitting', 600, 744);
 insert into PRICE (bus_type, distance, price) values('Sitting', 700, 868);
