@@ -42,6 +42,7 @@ insert into PRICE (bus_type, distance, price) values('Sitting', 1500, 1860);
 insert into PASSENGER (passenger_name, category, gender, boarding_city, destination_city, distance, bus_type, bus_id) VALUES('Sejal', 'AC', 'F', 'Bengaluru', 'Chennai', 350, 'Sleeper', 1);
 insert into PASSENGER (passenger_name, category, gender, boarding_city, destination_city, distance, bus_type, bus_id) values('Anmol', 'Non-AC', 'M', 'Mumbai', 'Hyderabad', 700, 'Sitting', 10);
 insert into PASSENGER (passenger_name, category, gender, boarding_city, destination_city, distance, bus_type, bus_id) values('Pallavi', 'AC', 'F', 'Panaji', 'Bengaluru', 600, 'Sleeper', 3);
+-- Sleeper bus with distance 1500 does not exist
 insert into PASSENGER (passenger_name, category, gender, boarding_city, destination_city, distance, bus_type) values('Khushboo', 'AC', 'F', 'Chennai', 'Mumbai', 1500, 'Sleeper');
 insert into PASSENGER (passenger_name, category, gender, boarding_city, destination_city, distance, bus_type, bus_id) values('Udit', 'Non-AC', 'M', 'Trivandrum', 'Panaji', 1000, 'Sleeper', 5);
 insert into PASSENGER (passenger_name, category, gender, boarding_city, destination_city, distance, bus_type, bus_id) values('Ankur', 'AC', 'M', 'Nagpur', 'Hyderabad', 500, 'Sitting', 8);
