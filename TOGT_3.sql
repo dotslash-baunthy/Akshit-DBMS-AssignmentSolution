@@ -1,8 +1,9 @@
+create schema IF NOT EXISTS TravelOnTheGo;
 use TravelOnTheGo;
 
 -- Q1 - Create tables
 -- `bus_id` is the primary key in PRICE table and is referenced (foreign key) in the passenger table. Default value for PASSENGER.bus_id is NULL
-CREATE TABLE PASSENGER (
+CREATE TABLE IF NOT EXISTS PASSENGER (
     passenger_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     passenger_name VARCHAR(100),
     category VARCHAR(50),
@@ -16,7 +17,7 @@ CREATE TABLE PASSENGER (
         REFERENCES PRICE (bus_id)
 );
 -- 
-CREATE TABLE PRICE (
+CREATE TABLE IF NOT EXISTS PRICE (
     bus_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     bus_type VARCHAR(10),
     distance INT,
@@ -24,6 +25,7 @@ CREATE TABLE PRICE (
 );
 
 -- Q2 - Insert values
+-- Duplicate tuple (bus_type = Sitting, distance = 600, price = 644) has been removed
 insert into PRICE (bus_type, distance, price) values('Sleeper', 350, 770);
 insert into PRICE (bus_type, distance, price) values('Sleeper', 500, 1100);
 insert into PRICE (bus_type, distance, price) values('Sleeper', 600, 1320);
